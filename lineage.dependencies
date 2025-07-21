@@ -6,6 +6,12 @@
     "branch": "15"
   },
   {
+    "remote": "GuidixX",
+    "repository"  : "vendor_xiaomi_peridot-miuicamera",
+    "target_path" : "vendor/xiaomi/peridot-miuicamera",
+    "branch": "fifteen"
+  },
+  {
     "remote": "crdroid",
     "repository"  : "android_hardware_xiaomi",
     "target_path" : "hardware/xiaomi",
