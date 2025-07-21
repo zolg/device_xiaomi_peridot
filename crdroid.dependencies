@@ -12,8 +12,8 @@
     "branch": "fifteen"
   },
   {
-    "remote": "crdroid",
-    "repository"  : "android_hardware_xiaomi",
+    "remote": "github",
+    "repository"  : "crdroidandroid/android_hardware_xiaomi",
     "target_path" : "hardware/xiaomi",
     "branch": "15.0"
   },
