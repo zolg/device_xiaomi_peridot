@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # ViperFX
-#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -24,6 +24,9 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 
 # Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
+
+# Inherit from the MiuiCamera setup
+$(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
 
 # Reduce system server verbosity
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
